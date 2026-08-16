@@ -4,7 +4,7 @@ function ComponenteGasolina({ precoGasolina, setPrecoGasolina }) {
       <label>Preço da Gasolina (R$)</label>
       <input>
         type="number" value={precoGasolina} onChange=
-        {(e) => setPrecoGasolina(e.target.value)} placeholder="Ex. 5.29
+        {(e) => setPrecoGasolina(e.target.value)} placeholder="Ex.: 5.29"
       </input>
     </div>
   );
