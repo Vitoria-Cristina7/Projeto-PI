@@ -10,7 +10,7 @@ function App() {
   const [precoÁlcool, setPrecoÁlcool] = useState("");
   const [precoGasolina, setPrecoGasolina] = useState("");
   const [veiculo, setVeiculo] = useState("");
-  const [Resultado, setResultado] = useState(null);
+  const [resultado, setResultado] = useState(null);
 
   function Calcular() {
     if (precoÁlcool === "" || precoGasolina === "") {
