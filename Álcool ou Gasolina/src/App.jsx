@@ -31,6 +31,19 @@ function App() {
         <h1>Álcool ou Gasolina?</h1>
         <p>Descubra qual combustível compensa mais no seu veículo!</p>
       </header>
+      <ComponenteVeiculo veiculo={veiculo} setVeiculo={setVeiculo} />
+      <ComponenteÁlcool
+        precoÁlcool={precoÁlcool}
+        setPrecoÁlcool={setPrecoÁlcool}
+      />
+      <ComponenteGasolina
+        precoGasolina={precoGasolina}
+        setPrecoGasolina={setPrecoGasolina}
+      />
+
+      <button onClick={Calcular}>Calcular</button>
+
+      <ComponenteResultado resultado={resultado} veiculo={veiculo} />
     </div>
   );
 }
